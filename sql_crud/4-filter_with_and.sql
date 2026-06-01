@@ -1,0 +1,1 @@
+SELECT title, price FROM boks WHERE genre = 'Tech' AND price > 30;
