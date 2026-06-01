@@ -13,9 +13,3 @@ CREATE TABLE books (
 );
 
 SELECT * FROM books;
-
-INSERT INTO books (id, title, author, genre, price, stock, published_year)
-VALUES (1, 'The Hobbit', 'J.R.R. Tolkien', 'Fantasy', 14.99, 20, 1937);
-
-INSERT INTO books (id, title, author, genre, price, stock, published_year)
-VALUES (2, 'Harry Potter and the Philosopher''s Stone', 'J.K. Rowling', 'Fantasy', 12.50, 40, 1997);
