@@ -1,5 +1,5 @@
-SELECT registrations.id AS registration_id, students.name AS student_name, courses.title AS course_title
-FROM registrations
-LEFT JOIN students ON registrations.student_id = students.id
-LEFT JOIN courses ON registrations.course_id = courses.id
-ORDER BY registration_id ASC;
+SELECT DISTINCT instructors.name
+FROM instructors
+LEFT JOIN courses ON instructors.id = courses.instructor_id
+LEFT JOIN registractions ON courses.id = registrations.course_id
+ORDER BY instructors.name ASC;
