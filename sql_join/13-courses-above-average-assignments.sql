@@ -6,4 +6,4 @@ HAVING COUNT(assignments.id) > (
     SELECT COUNT(id) * 1.0 / COUNT(DISTINCT course_id)
     FROM assignments
 )
-ORDER BY course.title ASC;
+ORDER BY courses.title ASC;
