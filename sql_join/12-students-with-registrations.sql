@@ -1,4 +1,7 @@
 SELECT DISTINCT students.name AS student_name
 FROM students
-INNER JOIN registrations ON registrations.student_id = students.id
+WHERE students.id IN (
+    SELECT student_id
+    FROM registrations
+)
 ORDER BY student_name ASC;
